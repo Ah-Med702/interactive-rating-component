@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
 :root {
     /* Primary  */
     --Orange: #fb7413;
@@ -16,7 +18,7 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Overpass', sans-serif;
     background-color: var(--Very-Dark-Blue);
     color: var(--White);
 }
@@ -45,7 +47,7 @@ p {
     width: 40px;
     height: 40px;
     text-align: center;
-    line-height: 43px;
+    line-height: 47px;
     background-color: #252d37;
     border-radius: 50%;
 }
