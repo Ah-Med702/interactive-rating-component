@@ -1,0 +1,125 @@
+:root {
+    /* Primary  */
+    --Orange: #fb7413;
+    /* Neutral */
+    --White: #ffffff;
+    --Light-Grey: #959eac;
+    --Medium-Grey: #7c8798;
+    --Dark-Blue: #252d37;
+    --Very-Dark-Blue: #121417;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--Very-Dark-Blue);
+    color: var(--White);
+}
+
+p {
+    font-size: 15px;
+}
+
+.rating-card,
+.thank-you {
+    max-width: 400px;
+    min-width: 300px;
+    padding: 30px;
+    background-color: #171c23;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.rating-card .star {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 43px;
+    background-color: #252d37;
+    border-radius: 50%;
+}
+
+.rating-card .header {
+    font-weight: bold;
+}
+
+.rating-card .content, 
+.thank-you .content {
+    color: var(--Medium-Grey);
+}
+
+.rating-card .rates {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rating-card .rate {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background-color: var(--Dark-Blue);
+    color: var(--Medium-Grey);
+    font-weight: bold;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.rating-card  .rate:hover {
+    background-color: var(--Medium-Grey);
+    color: var(--White);
+}
+
+.rating-card  .selected {
+    background-color: var(--Orange);
+    color: var(--White);
+}
+
+.rating-card .submit {
+    background-color: var(--Orange);
+    color: var(--White);
+    border-radius: 20px;
+    height: 40px;
+    border: none;
+    outline: none;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.rating-card .submit:hover {
+    background-color: var(--White);
+    color: var(--Orange);
+}
+
+.thank-you{
+    display: none;
+    align-items: center;
+}
+
+.thank-you .selected-div{
+    padding: 0 20px;
+    line-height: 35px;
+    text-align: center;
+    background-color: var(--Dark-Blue);
+    color: var(--Orange);
+    border-radius: 20px;
+}
+
+.thank-you .content{
+    text-align: center;
+}
